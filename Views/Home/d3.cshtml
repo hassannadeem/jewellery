@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Jewelry Shop</title>
+<link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+</head>
+<body style="background-color:lightsteelblue;">
+<div id="wrap">
+
+       <div class="header" style="background-color:black">
+       		<div class="logo"><a href="@Url.Action("Index", "Home")"><img src="~/Images/logo.png" alt="" title="" border="0" /></a></div> 
+                      
+        <div id="menu" style="background-color:black" >
+            <ul>                                                                       
+            
+            <li><a href="@Url.Action("Index", "Home")"style="background-color:ThreeDLightShadow">Home</a></li>
+            <li><a href="@Url.Action("about", "Home")"style="background-color:ThreeDLightShadow">About</a></li>
+            <li><a href="@Url.Action("Category", "Home")"style="background-color:ThreeDLightShadow">Jewels</a></li>
+            <li><a href="@Url.Action("Specials", "Home")"style="background-color:ThreeDLightShadow">Specials</a></li>
+            <li><a href="@Url.Action("Myaccount", "Home")"style="background-color:ThreeDLightShadow">My Accout</a></li>
+            <li><a href="@Url.Action("Register", "Home")"style="background-color:ThreeDLightShadow">Registration</a></li>
+            <li><a href="@Url.Action("Details", "Home")"style="background-color:ThreeDLightShadow">Prices</a></li>
+            <li><a href="@Url.Action("Contact", "Home")"style="background-color:ThreeDLightShadow">Contact</a></li>
+            </ul>
+        </div>          
+            
+            
+       </div> 
+       
+       
+       <div class="center_content">
+       	<div class="left_content">
+            <div class="title"><span class="title_icon"><img src="~/Images/bullet1.gif" alt="" title="" /></span>New Item</div>
+        
+        	<div class="feat_prod_box_details">
+           
+            <img src="~/Images/download (2).jpg" height=300 width=300 />
+                <br />
+                <div>
+                 <table class="cart_table">
+            	<tr class="cart_title">
+                	<td>Item pic</td>
+                	<td>Jewel name</td>
+                    <td>Unit price</td>
+                    <td>Qty</td>
+                    <td>Total</td>               
+                </tr>
+                
+            	<tr>
+                	
+                	<td>Jewel</td>
+                    <td>100$</td>
+                    <td>1</td>
+                    <td>100$</td>               
+                </tr>          
+            	
+
+                <tr>
+                <td colspan="4" class="cart_total"><span class="red">TOTAL SHIPPING:</span></td>
+                <td> 250$</td>                
+                </tr>  
+                
+                <tr>
+                <td colspan="4" class="cart_total"><span class="red">TOTAL:</span></td>
+                <td> 325$</td>                
+                </tr>                  
+            
+            </table>
+                    </div>
+          </div>	
+            
+              
+
+            
+
+            
+       <div class="clear"></div>
+        </div><!--end of left content-->
+        
+        <div class="right_content">
+        	<div class="languages_box">
+           
+            </div>
+               
+              <div class="cart">
+                  <div class="title"><span class="title_icon"><img src="~/Images/cart.gif" alt="" title="" /></span>My cart</div>
+                  <div class="home_cart_content">
+                  0 x items | <span class="red">TOTAL: $</span>
+                  </div>
+                  <a href="@Url.Action("Cart", "Home")" class="view_cart">view cart</a>
+              
+              </div>
+        
+             <div class="title"><span class="title_icon"><img src="~/Images/bullet3.gif" alt="" title="" /></span>About Our Shop</div> 
+             <div class="about">
+             <p>
+             <img src="~/Images/about.gif" alt="" title="" class="right" />
+             <p> Jewelry Shop is a shining star in the world of Gold items.Our organization deals with diamond items and white Gold items. Our 75 years experience tells ous to provide a grace full item to our respected customers:
+             </p>
+             
+             </div>
+             
+             <div class="right_box">
+             
+             	<div class="title"><span class="title_icon"><img src="~/Images/bullet4.gif" alt="" title="" /></span>Promotions</div> 
+                    <div class="new_prod_box">
+                        <a href="details.html">product name</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("details", "Home")"><img src="~/Images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>
+                    
+                    <div class="new_prod_box">
+                        <a href="@Url.Action("details", "Home")">product name</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("details", "Home")"><img src="~/Images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>                    
+                    
+                    <div class="new_prod_box">
+                        <a href="@Url.Action("details", "Home")">product name</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("details", "Home")"><img src="~/Images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>              
+             
+             </div>
+            <div class="right_box">
+         	    <div class="title"><span class="title_icon"><img src="~/Images/bullet5.gif" alt="" title="" /></span>Categories</div> 
+                
+                <ul class="list">
+                <li><a href="@Url.Action("Bloggg", "Home")">Bridal Variety</a></li>
+                <li><a href="@Url.Action("dmdearngs", "Home")">Diamond ear rings</a></li>
+                <li><a href="#">Gold Neckless</a></li>
+                <li><a href="#">Diamond neckless</a></li>
+                <li><a href="#">Tanishq Product</a></li>
+                <li><a href="#">Kundan Sets</a></li>
+                <li><a href="#">Italian Bresscellets</a></li>
+                <li><a href="#">Italian White Gold variety</a></li>
+                <li><a href="#">Italian diamond Bengals</a></li>
+                <li><a href="#">English jewelery</a></li>
+                <li><a href="#">Indian Bridal kanopi</a></li>                                              
+                </ul>
+                
+             	<div class="title"><span class="title_icon"><img src="~/Images/bullet6.gif" alt="" title="" /></span>Price List</div> 
+                
+                <ul class="list">
+                    <li><a href="@Url.Action("Category1", "Home")">Starts from 10000</a></li>
+                     <li><a href="@Url.Action("Category2", "Home")">*10000-15000</a></li>
+                     <li><a href="@Url.Action("Category3", "Home")">* 15000-20000</a></li>
+                     <li><a href="@Url.Action("Category4", "Home")">*20000-50000</a></li>
+                     <li><a href="@Url.Action("Category5", "Home")">*50000-70000</a></li>
+                     <li><a href="@Url.Action("Category6", "Home")">*70000-100000</a></li>
+                     <li><a href="@Url.Action("Category7", "Home")">*100000-110000</a></li>
+                    <li><a href="@Url.Action("Category8", "Home")">*110000.. .so on</a></li>
+                </ul> 
+             
+             </div>         
+             
+        
+        </div><!--end of right content-->
+        
+        
+        
+        
+       
+       
+       <div class="clear"></div>
+       </div><!--end of center content-->
+       
+              
+       
+
+</div>
+
+</body>
+</html>

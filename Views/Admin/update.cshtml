@@ -1,0 +1,93 @@
+﻿@model newwwww.Models.CustomerContact
+
+@{
+    ViewBag.Title = "update1";
+}
+
+<html>
+    <head>
+<title>Jewelry Shop</title>
+<link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+</head>
+<body style="background-color:lightsteelblue">
+<div id="wrap">
+
+      <div class="header" style="background-color:black">
+       		<div class="logo"><a href="@Url.Action("Index1", "Admin")"><img src="~/Images/logo.png" alt="" title="" border="0" /></a></div> 
+                      
+        <div id="menu" style="background-color:black" >
+        
+                 <li><a href="@Url.Action("Index1", "Admin")"style="background-color:ThreeDLightShadow">Home</a></li>
+
+        </div>      
+            
+            
+       </div> 
+       
+  <h2>@Session["user1"]</h2><br />     
+       <div class="center_content">
+       	<div class="left_content">
+            <div class="title"><span class="title_icon"><img src="~/Images/bullet1.gif" alt="" title="" /></span><h2>Update</h2></div>
+        
+        	<div class="feat_prod_box_details">
+            <p class="details">
+             In oredr to  update the record of the user fill up the following form :
+             </p>
+
+                 <br />
+                
+         @using (Html.BeginForm("update1", "Admin",FormMethod.Post))
+        {
+
+         <fieldset>
+           <legend>Enter Email of the user to update the record:</legend>
+                  
+          @Html.TextBoxFor(m=>m.Email)
+           
+       <br />
+      
+        @*<h4>Now Enter updated record:</h4>
+    
+                  <div class="form_row">
+                    <label class="contact" style="background-color:lightpink"><strong>Username:</strong></label>
+                    <input type="text" name="name" class="contact_input" required />
+                    </div>  
+
+
+                    <div class="form_row">
+                    <label class="contact" style="background-color:lightpink"><strong>Password:</strong></label>
+                    <input type="Password" name="pwd"  class="contact_input" required />
+                    </div> 
+
+                    <div class="form_row">
+                    <label class="contact" style="background-color:lightpink"><strong>Email:</strong></label>
+                    <input type="text" name="email" class="contact_input" required />
+                    </div>
+
+
+                    <div class="form_row">
+                    <label class="contact" style="background-color:lightpink"><strong>Phone:</strong></label>
+                    <input type="text" name="phone" class="contact_input" required />
+                    </div>
+                    
+                    <div class="form_row">
+                    <label class="contact" style="background-color:lightpink"><strong>Company:</strong></label>
+                    <input type="text" name="company" class="contact_input" required />
+                    </div>
+                    
+                    <div class="form_row">
+                    <label class="contact" style="background-color:lightpink"><strong>Adrres:</strong></label>
+                    <input type="text" name="address" class="contact_input" required />
+                    </div>           *@         
+<br />
+        <p>
+            <input type="submit" value="Update" />
+        </p>
+    </fieldset>
+}
+    
+
+</div>
+
+</body>
+</html>

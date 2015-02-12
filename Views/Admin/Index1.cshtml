@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Jewelry Shop</title>
+<link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+
+</head>
+<body style="background-color:lightsteelblue">
+<div id="wrap" >
+     <div class="header" style="background-color:black">
+       		<div class="logo"><a href="@Url.Action("Index1", "Admin")"><img src="~/Images/logo.png" alt="" title="" border="0" /></a></div> 
+                      
+        <div id="menu" style="background-color:black" >
+            <ul class="right">                                                                       
+             <li><a href="@Url.Action("Index1", "Admin")"style="background-color:ThreeDLightShadow">Admin Home</a></li>
+       <li><a href="@Url.Action("Update", "Admin")" style="background-color:ThreeDLightShadow">Update</a></li>
+            <li><a href="@Url.Action("delete", "Admin")"style="background-color:ThreeDLightShadow">Delete</a></li>
+            <li><a href="@Url.Action("myaccount", "Home")"style="background-color:ThreeDLightShadow")">Log out</a></li>
+            </ul>
+        </div>          
+            
+            
+       </div> 
+       
+       
+       
+       <div class="center_content" style="background-color:white">
+       	<div class="left_content">
+        	
+           <div class="title" ><h2>@Session["user1"]</h2><br />
+               <span class="title_icon"><img src="~/Images/bullet2.gif" alt="" title="" /></span>New products</div> 
+           
+           <div class="new_products">
+               
+                    <div class="new_prod_box" style="background-color:blanchedalmond">
+                        
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/new_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Category", "Home")"><img src="~/Images/c.jpg" height=100 width= 100 alt="" title="" class="thumb" border="0" /></a>
+                           <a href="details.html" style="background-color:black">PKR 210,000/=</a>
+                        </div>  
+                             
+                    </div>
+                
+                    <div class="new_prod_box" style="background-color:blanchedalmond">
+                       
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/new_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Category", "Home")"><img src="~/Images/a.jpg" height=100 width= 100  alt="" title="" class="thumb" border="0" /></a>
+                            <a href="details.html" style="background-color:black">PKR 210,000/=</a>
+                        </div> 
+                               
+                    </div>                    
+                   
+                    <div class="new_prod_box" style="background-color:blanchedalmond">
+                        
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/new_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Category", "Home")"><img src="~/Images/download (2).jpg" height=100 width= 100  alt="" title="" class="thumb" border="0" /></a>
+                           <a href="details.html" style="background-color:black">PKR 210,000/=</a>
+                        </div> 
+                              
+                    </div>
+                    <br />
+                    <div class="new_prod_box" style="background-color:blanchedalmond">
+                        
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/new_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Category", "Home")"><img src="~/Images/download (5).jpg" height=100 width= 100  alt="" title="" class="thumb" border="0" /></a>
+                           <a href="details.html" style="background-color:black">PKR 210,000/=</a>
+                        </div>
+                              
+                    </div>
+                    
+                    <div class="new_prod_box" style="background-color:blanchedalmond">
+                     
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/new_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Category", "Home")"><img src="~/Images/download (10).jpg" height=100 width= 100  alt="" title="" class="thumb" border="0" /></a>
+                            <a href="details.html" style="background-color:black">PKR 210,000/=</a>
+                        </div>  
+                                
+                    </div>                    
+                   
+                    <div class="new_prod_box" style="background-color:blanchedalmond">
+                        
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/new_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Category", "Home")"><img src="~/Images/download (11).jpg" height=100 width= 100  alt="" title="" class="thumb" border="0" /></a>
+                            <a href="details.html" style="background-color:black">PKR 210,000/=</a>
+                        </div>  
+                                
+                    </div>                    
+                   <br />
+                              
+            
+            </div>
+       <div class="left_content">
+        	
+               <br />
+               <br /> 
+          <div class="title"><span class="title_icon"><img src="~/Images/bullet1.gif" alt="" title="" /></span>Featured products</div>
+        
+        	<div class="feat_prod_box" style="background-color:blanchedalmond">
+            
+            	<div class="prod_img"><a href="details.html"><img src="~/Images/n.jpg" height=130 width=130 alt="" title="" border="0" /></a></div>
+                
+                <div class="prod_det_box">
+                	<div class="box_top"></div>
+                    <div class="box_center">
+                    <div class="prod_title" style="background-color:rosybrown"><center>White Hearty pendant</center></div>
+                   <p class="details">A sign of happiness and gift of Standard is white heart pendant,made with:</p>
+                        <ul>
+                            <li>Pure White gold => 21 karat</li>
+                            <li>Coated with Diamond Polish</li>
+                            <li>With NEELAM </li>
+                            <li><a href="#">Amount=21000/= PKR</a></li>
+                        </ul>
+                    <a href="~/Images/prod1.gif"    class ="more">- Click to see -</a>
+                    <div class="clear"></div>
+                    </div>
+                    
+                    <div class="box_bottom"></div>
+                </div>    
+            <div class="clear"></div>
+            </div>	
+         </div>
+            
+        	<div class="feat_prod_box" style="background-color:blanchedalmond">
+            
+            	<div class="prod_img" ><a href="details.html"><img src="~/Images/prod2.gif" alt="" title="" border="0" /></a></div>
+                
+                <div class="prod_det_box" >
+                	<div class="box_top"></div>
+                    <div class="box_center">
+                    <div class="prod_title" style="background-color:rosybrown"><center>Green Tops</center></div>
+                    <p class="details">Green Turkish Topes A sign of turkish Golden tradition, gives a Brilliant look to your personality</p>
+                         <ul>
+                            <li>Pure White gold => 21 karat</li>
+                            <li>Coated with Turkish diamond Coat Polish</li>
+                            <li>With Green Arquer </li>
+                            <li><a href="#">Amount=37,500/= PKR</a></li>
+                        </ul>
+                    <a href="~/Images/prod2.gif"    class ="more">- Click to see -</a>
+                    <div class="clear"></div>
+                    </div>
+                    
+                    <div class="box_bottom"></div>
+                </div>    
+            <div class="clear"></div>
+            </div>      
+            
+            
+            
+
+            
+        <div class="clear"></div>
+        </div><!--end of left content-->
+        
+        <div class="right_content">
+        	<div class="languages_box">
+            <span class="red">Search</span>
+            <input type="text" />
+            
+            </div>
+               
+              <div class="cart">
+                  <div class="title"><span class="title_icon"><img src="~/Images/cart.gif" alt="" title="" /></span>My cart</div>
+                  <div class="home_cart_content">
+                  0 x items | <span class="red">TOTAL: $</span>
+                  </div>
+                  <a href="@Url.Action("Cart", "Home")" class="view_cart">view cart</a>
+              
+              </div>
+                       
+            	
+        
+        
+             <div class="title" ><span class="title_icon"><img src="~/Images/bullet3.gif" alt="" title="" /></span>About Our Shop</div> 
+             <div class="about">
+             <p>
+             <img src="images/download (7).jpg" alt="" title="" class="right"  width=70 height=50/>
+            <p > Jewelry Shop is a shining star in the world of Gold items.Our organization deals with diamond items and white Gold items. Our 75 years experience tells ous to provide a grace full item to our respected customers:
+             </p>
+                 
+            
+             </div>
+             
+             <div class="right_box">
+             
+             	<div class="title"><span class="title_icon"><img src="~/Images/bullet4.gif" alt="" title="" /></span>Promotions</div> 
+                    <div class="new_prod_box">
+                        <a href="@Url.Action("details", "Home")">product name</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Bloggg", "Home")"><img src="~/Images/download (4).jpg" height=100 width= 100  alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>
+                    
+                    <div class="new_prod_box">
+                        <a href="@Url.Action("details", "Home")">product name</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Bloggg", "Home")"><img src="~/Images/images (11).jpg" height=100 width= 100 alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>                    
+                    
+                    <div class="new_prod_box">
+                        <a href="@Url.Action("details", "Home")">product name</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="~/Images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="@Url.Action("Bloggg", "Home")"><img src="~/Images/images (23).jpg" height=100 width= 100 alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>              
+             
+             </div>
+          
+             <div class="right_box">
+             
+             	<div class="title"><span class="title_icon"><img src="~/Images/bullet5.gif" alt="" title="" /></span>Categories</div> 
+                
+                <ul class="list">
+                <li><a href="@Url.Action("Bloggg", "Home")">Bridal Variety</a></li>
+                <li><a href="@Url.Action("dmdearngs", "Home")">Diamond ear rings</a></li>
+                <li><a href="@Url.Action("Gneck", "Home")">Gold Neckless</a></li>
+                <li><a href="@Url.Action("dneck", "Home")">Diamond neckless</a></li>
+                <li><a href="@Url.Action("tp", "Home")">Tanishq Product</a></li>
+                <li><a href="@Url.Action("ks", "Home")">Kundan Sets</a></li>
+                <li><a href="@Url.Action("ib", "Home")">Italian Bresscellets</a></li>
+                <li><a href="@Url.Action("iwgv", "Home")">Italian White Gold variety</a></li>
+                <li><a href="@Url.Action("idb", "Home")">Italian diamond Bengals</a></li>
+                <li><a href="@Url.Action("ej", "Home")">English jewelery</a></li>
+                <li><a href="@Url.Action("ibk", "Home")">Indian Bridal kanopi</a></li>                                              
+                </ul>
+                
+             	<div class="title"><span class="title_icon"><img src="~/Images/bullet6.gif" alt="" title="" /></span>Price List</div> 
+                
+                <ul class="list">
+                    <li><a href="@Url.Action("Category1", "Home")">Starts from 10000</a></li>
+                     <li><a href="@Url.Action("Category2", "Home")">*10000-15000</a></li>
+                     <li><a href="@Url.Action("Category3", "Home")">* 15000-20000</a></li>
+                     <li><a href="@Url.Action("Category4", "Home")">*20000-50000</a></li>
+                     <li><a href="@Url.Action("Category5", "Home")">*50000-70000</a></li>
+                     <li><a href="@Url.Action("Category6", "Home")">*70000-100000</a></li>
+                     <li><a href="@Url.Action("Category7", "Home")">*100000-110000</a></li>
+                    <li><a href="@Url.Action("Category8", "Home")">*110000.. .so on</a></li>
+                </ul> 
+             
+             </div>         
+             
+        
+        </div><!--end of right content-->
+        
+        
+       
+       
+       <div class="clear"></div>
+       </div><!--end of center content-->
+       
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿@model newwwww.Models.Database1Entities3
+
+@{
+    ViewBag.Title = "Rabta";
+}
+
+<html>
+    <head>
+<title>Jewelry Shop</title>
+<link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+</head>
+<body style="background-color:lightsteelblue">
+<div id="wrap">
+
+      <div class="header" style="background-color:black">
+       		<div class="logo"><a href="index.html"><img src="~/Images/logo.png" alt="" title="" border="0" /></a></div> 
+                      
+        <div id="menu" style="background-color:black" >
+        </div>      
+            
+            
+       </div> 
+       
+       
+       <div class="center_content">
+       	<div class="left_content">
+            <div class="title"><span class="title_icon"><img src="~/Images/bullet1.gif" alt="" title="" /></span><h2>Write message</h2></div>
+        
+        	<div class="feat_prod_box_details">
+            <p class="details">
+             Well come to the online jewelary shop, You requwst has been recieved:<br />
+                We will Contact you soon.
+             </p>
+
+                <br />
+                
+              	
+@using (Html.BeginForm("Rabta1", "Home",FormMethod.Post))
+{
+
+    <fieldset>
+        <legend>Write your message:</legend>
+          
+        <input type="text" size="50" name="t" /> 
+        Insert<input type="submit"  name="t1" />         
+ 
+    </fieldset>
+}
+ 
+            
+
+    
+
+</div>
+
+</body>
+</html>
